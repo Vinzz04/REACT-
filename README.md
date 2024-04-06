@@ -30,14 +30,15 @@
 
 How do u create a production build?.
 
-** If ur building a production build, then u have to the command npx parcel build index.html after this running 
-   this command u will get error, so to solve this error, u have to remove "main": "script.js" from package.json file. cuz wn ur using 
-   parcel u will give entry point as index.html so parcel conflicts with this("main": "script.js",) so u will get error.
+If ur building a production build, then u have to run the command npx parcel build index.html after running this command u will get error, so to solve this error, u have to remove "main": "script.js" from package.json file. cuz wn ur using parcel u will give entry point as index.html so parcel conflicts with this("main": "script.js",) so u will get error.
 
-===> wn u run npx parcel index.html it woll generates a development build of ur project n it hosts it onto/put onto dist folder.
+===> wn u run npx parcel index.html it will generates a development build of ur project n it hosts it onto/put onto dist 
+     folder.
 ===> whatever u see in output that code will be coming from dist file not coming from app.js or whatever.
-===> wn u refresh page n save the files it will use parcel's cache n dist to update it(refreshed page n saved files) using HMR
+===> wn u refresh the page n save the files it will use parcel's cache n dist to update it(refreshed page n saved files) 
+     using HMR
 
-==> wn u run npx parcel build index.html it will generates 3 files(index.html, .css, .js). these files r production ready files.
-==> wt is production build = it'll compress everthing n minify everthing to these 3 files(index.html, .css, .js). now these 3 files 
-conatians all the code u write n these files r production ready code app.
+==> wn u run npx parcel build index.html it will generates 3 files(index.html, .css, .js). these files r production ready 
+    files.
+==> wt is production build = it'll compress everthing n minify everything to these 3 files(index.html, .css, .js). now these 
+    3 files conatians all the code u write n these files r production ready code app.
